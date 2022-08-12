@@ -23,30 +23,30 @@
 <meta charset='utf-8'>
 <meta content='width=device-width, initial-scale=1.0' name='viewport'>
 <link href='./assets/favicon.png' rel='shortcut icon'>
-<meta content='/pass.html' name='app:pageurl'>
+<meta content='/tar.html' name='app:pageurl'>
 
 
-  <title>Pass cheatsheet</title>
-  <meta content='Pass cheatsheet' property='og:title'>
-  <meta content='Pass cheatsheet' property='twitter:title'>
+  <title>tar cheatsheet</title>
+  <meta content='tar cheatsheet' property='og:title'>
+  <meta content='tar cheatsheet' property='twitter:title'>
   <meta content='article' property='og:type'>
 
 
 
-  <meta content='https://assets.devhints.io/previews/pass.jpg?t=20220812010207' property='og:image'>
-  <meta content='https://assets.devhints.io/previews/pass.jpg?t=20220812010207' property='twitter:image'>
+  <meta content='https://assets.devhints.io/previews/tar.jpg?t=20220812010207' property='og:image'>
+  <meta content='https://assets.devhints.io/previews/tar.jpg?t=20220812010207' property='twitter:image'>
   <meta content='900' property='og:image:width'>
   <meta content='471' property='og:image:height'>
 
 
 
-  <meta content="The one-page guide to Pass: usage, examples, links, snippets, and more." name="description">
-  <meta content="The one-page guide to Pass: usage, examples, links, snippets, and more." property="og:description">
-  <meta content="The one-page guide to Pass: usage, examples, links, snippets, and more." property="twitter:description">
+  <meta content="One-page guide to tar: usage, examples, and more. Concatenate, Deflate, Inflate files" name="description">
+  <meta content="One-page guide to tar: usage, examples, and more. Concatenate, Deflate, Inflate files" property="og:description">
+  <meta content="One-page guide to tar: usage, examples, and more. Concatenate, Deflate, Inflate files" property="twitter:description">
 
 
-<link rel="canonical" href="https://devhints.io/pass">
-<meta name="og:url" content="https://devhints.io/pass">
+<link rel="canonical" href="https://devhints.io/tar">
+<meta name="og:url" content="https://devhints.io/tar">
 
 
 
@@ -114,9 +114,9 @@ gtag('config','UA-106902774-1');
     "@type": "WebPage",
     "@id": "https://google.com/article"
   },
-  "headline": "Pass cheatsheet",
-  "image": [ "https://assets.devhints.io/previews/pass.jpg?t=20220812010207" ],
-  "description": "The one-page guide to Pass: usage, examples, links, snippets, and more."
+  "headline": "tar cheatsheet",
+  "image": [ "https://assets.devhints.io/previews/tar.jpg?t=20220812010207" ],
+  "description": "One-page guide to tar: usage, examples, and more. Concatenate, Deflate, Inflate files"
 }
 </script>
 <script type='application/ld+json'>
@@ -134,8 +134,8 @@ gtag('config','UA-106902774-1');
     "@type": "ListItem",
     "position": 2,
     "item": {
-      "@id": "https://devhints.io/pass",
-      "name": "Pass"
+      "@id": "https://devhints.io/tar",
+      "name": "tar"
     }
   }]
 }
@@ -161,8 +161,8 @@ gtag('config','UA-106902774-1');
       <div class='actions'>
         
 <ul class="social-list social page-actions">
-  <li class="facebook link hint--bottom" data-hint="Share on Facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://devhints.io/pass.html" target="share"><span class="text"></span></a></li>
-  <li class="twitter link hint--bottom" data-hint="Share on Twitter"><a href="https://twitter.com/intent/tweet?text=The%20ultimate%20cheatsheet%20for%20Pass.%20https://devhints.io/pass.html" target="share"><span class="text"></span></a></li>
+  <li class="facebook link hint--bottom" data-hint="Share on Facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://devhints.io/tar.html" target="share"><span class="text"></span></a></li>
+  <li class="twitter link hint--bottom" data-hint="Share on Twitter"><a href="https://twitter.com/intent/tweet?text=The%20ultimate%20cheatsheet%20for%20tar.%20https://devhints.io/tar.html" target="share"><span class="text"></span></a></li>
   
 </ul>
 
@@ -170,7 +170,7 @@ gtag('config','UA-106902774-1');
         
           <ul class='page-actions'>
             <li class='link github -button hint--bottom' data-hint='Edit this page on GitHub'>
-              <a href='https://github.com/rstacruz/cheatsheets/blob/master/pass.md'>
+              <a href='https://github.com/rstacruz/cheatsheets/blob/master/tar.md'>
                 <span class='text -visible'>Edit</span>
               </a>
             </li>
@@ -184,7 +184,7 @@ gtag('config','UA-106902774-1');
 
 <div class='body-area'>
   <header class='main-heading -center' role='banner'>
-    <h1 class='h1'>Pass <em>cheatsheet</em></h1>
+    <h1 class='h1'>tar <em>cheatsheet</em></h1>
 
     <div class='pubbox' data-js-no-preview>
       
@@ -205,57 +205,72 @@ gtag('config','UA-106902774-1');
   
 
   
+    <div class='intro-content MarkdownBody'>
+      <p>Concatenate, Deflate, Inflate files</p>
+
+    </div>
+  
 
   <main class='post-content MarkdownBody' data-js-main-body data-js-anchors role='main'>
-    <h2 id="reference">Reference</h2>
+    <h2 class="-two-column" id="reference">Reference</h2>
 
-<h3 id="create">Create</h3>
-
-<pre><code class="language-sh">$ pass init [-p] &lt;gpg-id&gt;
-$ pass git init
-$ pass git remote add origin &lt;your.git:repository&gt;
-$ pass git push -u --all
+<h3 id="deflate--inflate--concatenate">Deflate / Inflate / Concatenate</h3>
+<pre><code class="language-shell"># Deflate / Compress
+tar -czf archive.tar.gz /path/files
 </code></pre>
 
-<h3 id="store">Store</h3>
-
-<pre><code class="language-sh">$ pass insert [-m] twitter.com/rsc
-$ pass generate [-n] twitter.com/rsc length
+<pre><code class="language-shell"># Inflate / Uncompress
+tar -xzf archive.tar.gz
 </code></pre>
 
-<h3 id="retrieve">Retrieve</h3>
-
-<pre><code class="language-sh">$ pass ls twitter.com/
-$ pass show twitter.com/rsc
-$ pass -c twitter.com/rsc
+<pre><code class="language-shell"># Concatenate files into a single tar
+tar -cf archive.tar /path/files
 </code></pre>
 
-<h3 id="search">Search</h3>
-
-<pre><code class="language-sh">$ pass find twitter.com
+<pre><code class="language-shell"># Extract file to a defined directory
+tar -xzf archive.tar.gz -C /target/directory
 </code></pre>
 
-<h3 id="management">Management</h3>
-
-<pre><code class="language-sh">$ pass mv twitter.com twitter.com/rsc
-$ pass rm [-rf] twitter.com
-$ pass cp twitter.com/rsc twitter.com/ricosc
+<pre><code class="language-shell"># Append a file to an existing archive
+tar -zu archive.tar.gz -C /target/file
 </code></pre>
 
-<pre><code class="language-sh">$ pass edit twitter.com/rsc
-</code></pre>
+<h3 id="common-options">Common options</h3>
 
-<h3 id="synchronize">Synchronize</h3>
-
-<pre><code class="language-sh">$ pass git push
-$ pass git pull
-</code></pre>
-
-<h2 id="references">References</h2>
-
-<ul>
-  <li><a href="https://passwordstore.org">https://passwordstore.org</a></li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>z</code></td>
+      <td>compress with gzip</td>
+    </tr>
+    <tr>
+      <td><code>c</code></td>
+      <td>create an archive</td>
+    </tr>
+    <tr>
+      <td><code>u</code></td>
+      <td>append files which are newer than the corresponding copy ibn the archive</td>
+    </tr>
+    <tr>
+      <td><code>f</code></td>
+      <td>filename of the archive</td>
+    </tr>
+    <tr>
+      <td><code>v</code></td>
+      <td>verbose, display what is inflated or deflated</td>
+    </tr>
+    <tr>
+      <td><code>a</code></td>
+      <td>unlike of <code>z</code>, determine compression based on file extension</td>
+    </tr>
+  </tbody>
+</table>
 
   </main>
 </div>
@@ -269,7 +284,7 @@ $ pass git pull
       <details class='comments-details'>
         <summary>
           <strong class='count'>
-            <span class='disqus-comment-count' data-disqus-identifier="pass" data-disqus-url='https://devhints.io/pass'>0 Comments</span>
+            <span class='disqus-comment-count' data-disqus-identifier="tar" data-disqus-url='https://devhints.io/tar'>0 Comments</span>
           </strong>
           <span class='suffix'>for this cheatsheet.</span>
           <span class='fauxlink'>Write yours!</span>
@@ -281,7 +296,7 @@ $ pass git pull
         </div>
       </details>
     </div>
-    <noscript data-js-disqus='{"host":"devhints.disqus.com","url":"https://devhints.io/pass","identifier":"pass"}'></noscript>
+    <noscript data-js-disqus='{"host":"devhints.disqus.com","url":"https://devhints.io/tar","identifier":"tar"}'></noscript>
   </section>
 
 
