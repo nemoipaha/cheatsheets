@@ -23,30 +23,30 @@
 <meta charset='utf-8'>
 <meta content='width=device-width, initial-scale=1.0' name='viewport'>
 <link href='./assets/favicon.png' rel='shortcut icon'>
-<meta content='/flynn.html' name='app:pageurl'>
+<meta content='/yum.html' name='app:pageurl'>
 
 
-  <title>Flynn cheatsheet</title>
-  <meta content='Flynn cheatsheet' property='og:title'>
-  <meta content='Flynn cheatsheet' property='twitter:title'>
+  <title>YUM cheatsheet</title>
+  <meta content='YUM cheatsheet' property='og:title'>
+  <meta content='YUM cheatsheet' property='twitter:title'>
   <meta content='article' property='og:type'>
 
 
 
-  <meta content='https://assets.devhints.io/previews/flynn.jpg?t=20240215002216' property='og:image'>
-  <meta content='https://assets.devhints.io/previews/flynn.jpg?t=20240215002216' property='twitter:image'>
+  <meta content='https://assets.devhints.io/previews/yum.jpg?t=20240215002216' property='og:image'>
+  <meta content='https://assets.devhints.io/previews/yum.jpg?t=20240215002216' property='twitter:image'>
   <meta content='900' property='og:image:width'>
   <meta content='471' property='og:image:height'>
 
 
 
-  <meta content="The one-page guide to Flynn: usage, examples, links, snippets, and more." name="description">
-  <meta content="The one-page guide to Flynn: usage, examples, links, snippets, and more." property="og:description">
-  <meta content="The one-page guide to Flynn: usage, examples, links, snippets, and more." property="twitter:description">
+  <meta content="The one-page guide to YUM: usage, examples, links, snippets, and more." name="description">
+  <meta content="The one-page guide to YUM: usage, examples, links, snippets, and more." property="og:description">
+  <meta content="The one-page guide to YUM: usage, examples, links, snippets, and more." property="twitter:description">
 
 
-<link rel="canonical" href="https://devhints.io/flynn">
-<meta name="og:url" content="https://devhints.io/flynn">
+<link rel="canonical" href="https://devhints.io/yum">
+<meta name="og:url" content="https://devhints.io/yum">
 
 
 
@@ -62,7 +62,7 @@
 
 
 
-  <meta content='Devops' property='article:section'>
+  <meta content='CLI' property='article:section'>
 
 
 
@@ -114,9 +114,9 @@ gtag('config','G-N7TC6B227L');
     "@type": "WebPage",
     "@id": "https://google.com/article"
   },
-  "headline": "Flynn cheatsheet",
-  "image": [ "https://assets.devhints.io/previews/flynn.jpg?t=20240215002216" ],
-  "description": "The one-page guide to Flynn: usage, examples, links, snippets, and more."
+  "headline": "YUM cheatsheet",
+  "image": [ "https://assets.devhints.io/previews/yum.jpg?t=20240215002216" ],
+  "description": "The one-page guide to YUM: usage, examples, links, snippets, and more."
 }
 </script>
 <script type='application/ld+json'>
@@ -127,15 +127,15 @@ gtag('config','G-N7TC6B227L');
     "@type": "ListItem",
     "position": 1,
     "item": {
-      "@id": "https://devhints.io/#devops",
-      "name": "Devops"
+      "@id": "https://devhints.io/#cli",
+      "name": "CLI"
     }
   },{
     "@type": "ListItem",
     "position": 2,
     "item": {
-      "@id": "https://devhints.io/flynn",
-      "name": "Flynn"
+      "@id": "https://devhints.io/yum",
+      "name": "YUM"
     }
   }]
 }
@@ -161,8 +161,8 @@ gtag('config','G-N7TC6B227L');
       <div class='actions'>
         
 <ul class="social-list social page-actions">
-  <li class="facebook link hint--bottom" data-hint="Share on Facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://devhints.io/flynn.html" target="share"><span class="text"></span></a></li>
-  <li class="twitter link hint--bottom" data-hint="Share on Twitter"><a href="https://twitter.com/intent/tweet?text=The%20ultimate%20cheatsheet%20for%20Flynn.%20https://devhints.io/flynn.html" target="share"><span class="text"></span></a></li>
+  <li class="facebook link hint--bottom" data-hint="Share on Facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://devhints.io/yum.html" target="share"><span class="text"></span></a></li>
+  <li class="twitter link hint--bottom" data-hint="Share on Twitter"><a href="https://twitter.com/intent/tweet?text=The%20ultimate%20cheatsheet%20for%20YUM.%20https://devhints.io/yum.html" target="share"><span class="text"></span></a></li>
   
 </ul>
 
@@ -170,7 +170,7 @@ gtag('config','G-N7TC6B227L');
         
           <ul class='page-actions'>
             <li class='link github -button hint--bottom' data-hint='Edit this page on GitHub'>
-              <a href='https://github.com/rstacruz/cheatsheets/blob/master/flynn.md'>
+              <a href='https://github.com/rstacruz/cheatsheets/blob/master/yum.md'>
                 <span class='text -visible'>Edit</span>
               </a>
             </li>
@@ -184,7 +184,7 @@ gtag('config','G-N7TC6B227L');
 
 <div class='body-area'>
   <header class='main-heading -center' role='banner'>
-    <h1 class='h1'>Flynn <em>cheatsheet</em></h1>
+    <h1 class='h1'>YUM <em>cheatsheet</em></h1>
 
     <div class='pubbox' data-js-no-preview>
       
@@ -207,95 +207,62 @@ gtag('config','G-N7TC6B227L');
   
 
   <main class='post-content MarkdownBody' data-js-main-body data-js-anchors role='main'>
-    <h3 id="general-workflow">General workflow</h3>
+    <h2 id="commands">Commands</h2>
 
-<ul>
-  <li>Start a flynn cluster (on amazon or vagrant)</li>
-  <li><code>flynn cluster add</code> to add that cluster</li>
-  <li><code>flynn create NAME</code> in your app</li>
-  <li><code>git push flynn master</code> to deploy</li>
-</ul>
+<h3 id="help-and-lists">Help and lists</h3>
 
-<h3 id="creating-a-cluster-aws">Creating a cluster (AWS)</h3>
-
-<pre><code class="language-bash">flynn install  # (provisions AWS EC2 stuff)
-flynn key add  # (adds your pubkey to AWS)
+<pre><code class="language-bash">yum help                     # Display yum commands and options
+yum list available           # List all available packages
+yum list installed           # List all installed packages
+yum list kernel              # List installed and available kernel packages
+yum info vsftpd              # List info about vsftpd package
 </code></pre>
 
-<h4 id="what-it-does">What it does</h4>
+<h3 id="searching-and-dependencies">Searching and dependencies</h3>
 
-<ul>
-  <li>This creates <code>XXXX.flynnhub.com</code></li>
-  <li>Dashboard in <code>dashboard.XXXX.flynnhub.com</code></li>
-  <li>Use <code>flynn -a dashboard env get LOGIN_TOKEN</code> to get login token</li>
-  <li>Apps live in <code>APP.XXXX.flynnhub.com</code></li>
-</ul>
-
-<h3 id="using-a-flynn-cluster">Using a flynn cluster</h3>
-
-<p class="-setup">Managed in <code>~/.flynnrc</code>:</p>
-
-<pre><code class="language-bash">flynn cluster
-flynn cluster add [-g githost] [-p pin] NAME URL KEY
-flynn cluster remove NAME
-flynn cluster default NAME # use this current
+<pre><code class="language-bash">yum deplist nfs-utils        # List dependencies for nfs-utils
+yum provides "*bin/top"      # Show package containing top command
+yum search samba             # Find packages with samba in name or description
 </code></pre>
 
-<h3 id="setting-up-a-new-app">Setting up a new app</h3>
+<h3 id="updating-and-security">Updating and security</h3>
 
-<pre><code class="language-bash">cd ~/project
-flynn create example # adds the `flynn` remote
-flynn route # prints http routes
-git push flynn master
+<pre><code class="language-bash">yum updateinfo security      # Get info on available security updates
+yum update --security        # Apply security-related package updates
 </code></pre>
 
-<h2 id="commands">Commands</h2>
+<h3 id="managing-repositories">Managing repositories</h3>
 
-<h3 id="environment-vars">Environment vars</h3>
-
-<pre><code class="language-bash">flynn env
-flynn env set FOO=bar BAZ=foobar
-flynn env unset FOO
+<pre><code class="language-bash">yum repolist                     # Display enabled software repositories
+yum repoinfo rhel-7-server-rpms  # See info on specific repo
+yum repo-pkgs my-rpms list       # List packages from a specific repo
 </code></pre>
 
-<h3 id="scale">Scale</h3>
+<h3 id="installation-and-upgrades">Installation and upgrades</h3>
 
-<pre><code class="language-bash">flynn ps
-flynn scale web=3
+<pre><code class="language-bash">yum install vsftpd           # Install the vsftpd package
+yum update                   # Update all packages
+yum downgrade abc            # Downgrade the abc package to an earlier version
+yum autoremove httpd         # Remove httpd and unneeded packages
 </code></pre>
 
-<h3 id="logs">Logs</h3>
+<h3 id="package-groups">Package groups</h3>
 
-<pre><code class="language-bash">flynn log
-flynn log flynn-d55c7a...
+<pre><code class="language-bash">yum groupinstall "Web server"    # Install Web Server packages
 </code></pre>
 
-<h3 id="running-commands">Running commands</h3>
+<h3 id="troubleshooting">Troubleshooting</h3>
 
-<pre><code class="language-bash">flynn run rake db:migrate
+<pre><code class="language-bash">yum history list             # List all yum transactions
+yum clean packages           # Delete packages saved in cache
 </code></pre>
 
-<h3 id="manage-routes">Manage routes</h3>
+<h3 id="popular-options">Popular options</h3>
 
-<pre><code class="language-bash">flynn route
-flynn route add http example.com
-# then make a CNAME from example.com to myapp.xxxx.flynnhub.com
+<pre><code class="language-bash">-y                           # Assume yes if prompted
+--disablerepo=epel           # Disable a specific repo for a command
+--downloadonly               # Download package to cache but don't install
 </code></pre>
-
-<h3 id="more">More</h3>
-
-<pre><code class="language-bash">flynn ps
-flynn kill &lt;job&gt;
-
-flynn meta
-flynn meta set foo=baz
-</code></pre>
-
-<h2 id="also-see">Also see</h2>
-
-<ul>
-  <li><a href="https://flynn.io/">Flynn website</a> <em>(flynn.io)</em></li>
-</ul>
 
   </main>
 </div>
@@ -309,7 +276,7 @@ flynn meta set foo=baz
       <details class='comments-details'>
         <summary>
           <strong class='count'>
-            <span class='disqus-comment-count' data-disqus-identifier="flynn" data-disqus-url='https://devhints.io/flynn'>0 Comments</span>
+            <span class='disqus-comment-count' data-disqus-identifier="yum" data-disqus-url='https://devhints.io/yum'>0 Comments</span>
           </strong>
           <span class='suffix'>for this cheatsheet.</span>
           <span class='fauxlink'>Write yours!</span>
@@ -321,7 +288,7 @@ flynn meta set foo=baz
         </div>
       </details>
     </div>
-    <noscript data-js-disqus='{"host":"devhints.disqus.com","url":"https://devhints.io/flynn","identifier":"flynn"}'></noscript>
+    <noscript data-js-disqus='{"host":"devhints.disqus.com","url":"https://devhints.io/yum","identifier":"yum"}'></noscript>
   </section>
 
 
@@ -378,14 +345,14 @@ flynn meta set foo=baz
       <div class='group'>
         <div class='related-posts-group'>
           
-            <h3>Other Devops cheatsheets</h3>
+            <h3>Other CLI cheatsheets</h3>
           
 
           <ul class='related-post-list'>
             
               <li class='item related-post-item'>
-  <a href='./docker-compose'>
-    <strong>docker-compose</strong>
+  <a href='./cron'>
+    <strong>Cron</strong>
     <span>
       cheatsheet
 
@@ -398,8 +365,8 @@ flynn meta set foo=baz
 
             
               <li class='item related-post-item'>
-  <a href='./awscli'>
-    <strong>AWS CLI</strong>
+  <a href='./homebrew'>
+    <strong>Homebrew</strong>
     <span>
       cheatsheet
 
@@ -412,8 +379,8 @@ flynn meta set foo=baz
 
             
               <li class='item related-post-item'>
-  <a href='./chef'>
-    <strong>Chef</strong>
+  <a href='./httpie'>
+    <strong>httpie</strong>
     <span>
       cheatsheet
 
@@ -426,8 +393,8 @@ flynn meta set foo=baz
 
             
               <li class='item related-post-item'>
-  <a href='./circle'>
-    <strong>CircleCI</strong>
+  <a href='./adb'>
+    <strong>adb (Android Debug Bridge)</strong>
     <span>
       cheatsheet
 
@@ -440,8 +407,8 @@ flynn meta set foo=baz
 
             
               <li class='item related-post-item'>
-  <a href='./deis'>
-    <strong>Deis</strong>
+  <a href='./composer'>
+    <strong>composer</strong>
     <span>
       cheatsheet
 
@@ -454,8 +421,8 @@ flynn meta set foo=baz
 
             
               <li class='item related-post-item'>
-  <a href='./docker'>
-    <strong>Docker CLI</strong>
+  <a href='./fish-shell'>
+    <strong>Fish shell</strong>
     <span>
       cheatsheet
 
